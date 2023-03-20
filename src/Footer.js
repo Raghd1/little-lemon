@@ -2,8 +2,9 @@ import chef from "./images/chef.jpg"
 
 export default function Footer(){
     return(
-        <footer>
-            <img src={chef} alt="chef" width={300} height={300}/>
+        <footer className="footerNav">
+            <div className="footerDiv">
+            <img src={chef} alt="chef" className="footerImg"/>
             <ul>
                 <p>Doormat Navigation</p>
              <li> <a href="#Home" onClick={"Home"}>HOME</a> </li>
@@ -25,5 +26,6 @@ export default function Footer(){
               <li><a href="#Phone-Number" onClick={"PhoneNumber"}>Phone Number</a> </li>
               <li><a href="#Email" onClick={"Email"}>Email</a></li>
               </ul>
+              </div>
         </footer>
     )};
