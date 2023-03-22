@@ -119,6 +119,24 @@
   align-items: center;
   justify-content: flex-end;
 }
+.nav.nav {
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-item,
+.nav-items {
+  margin: 10px;
+  padding-bottom: 7px;
+}
+a.nav-items {
+  text-decoration: none;
+  color: black;
+}
+a.nav-items:hover {
+  color: #485f57;
+  border-bottom: 1px solid rgb(244 206 21);
+}
 .toggle-menu {
   color: rgb(165, 162, 162);
   font-size: 22px;
