@@ -13,17 +13,7 @@ import {useFormContext} from "./FormContext";
 import {Routes, Route, Link} from 'react-router-dom'
 
 export default function App() {
-  let { form } = useFormContext();
 
-  const formProps = {
-    name: form.name,
-    date: form.date,
-    time: form.time,
-    guests: form.numberOfGuests,
-    occasion: form.occasion,
-    table: form.tablePreference,
-    request: form.message,
-  };
   return (
     <>
     <div className='App'>
@@ -44,8 +34,7 @@ export default function App() {
 <Route path="/menu" element={<Header/>} />
 <Route path="/reservations" element={<BookingForm/>} />
 <Route path="/booking" element={<Booking />} />
-<Route path="/booking-confirmation"
-          element={<BookingConfirmation {...formProps} />} />
+
 <Route path="/order-online" element={<Header/>} />
 <Route path="/login" element={<Header/>} />
 </Routes>
