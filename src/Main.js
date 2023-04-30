@@ -1,3 +1,4 @@
+import React, { Component } from "react"
 import greeksalad from "./images/greeksalad.jpg"
 import lemondessert from "./images/lemondessert.jpg"
 import restauranfood from "./images/restauranfood.jpg"
@@ -6,7 +7,7 @@ import salad from "./images/Salad.jpg"
 import reviewer from "./images/reviewer.jpg"
 import chefs from "./images/chefs.jpg"
 export default function Main(){
-return(
+return (
 <main >
 <div class="design">
         <div className="child">
